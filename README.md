@@ -7,7 +7,8 @@
 
 ## 🚀 Live Demo
 
-เข้าชมเว็บไซต์ที่:  👉 **[georgia-escape-demo.vercel.app](https://georgia-escape-demo.vercel.app)**
+เข้าชมเว็บไซต์ที่ deploy แล้ว:  
+👉 **[georgia-escape-demo.vercel.app](https://georgia-escape-demo.vercel.app)**
 
 ---
 
@@ -53,31 +54,31 @@
 <summary>คลิกเพื่อดูภาพหน้าจอทั้งหมด</summary>
 
 ### Homepage
-![Homepage](screenshots-web-project/index.png)
+![Homepage](./georgia-escape-code-examples/screenshots-web-project/index.png)
 
 ### Packages
-![Packages](screenshots-web-project/packages.png)
+![Packages](./georgia-escape-code-examples/screenshots-web-project/packages.png)
 
 ### Tour Details - Tbilisi
-![Tbilisi](screenshots-web-project/tour-details-tbilisi.png)
+![Tbilisi](./georgia-escape-code-examples/screenshots-web-project/tour-details-tbilisi.png)
 
 ### Tour Details - Highland
-![Highland](screenshots-web-project/tour-details-highland.png)
+![Highland](./georgia-escape-code-examples/screenshots-web-project/tour-details-highland.png)
 
 ### Tour Details - Wine
-![Wine](screenshots-web-project/tour-details-wine.png)
+![Wine](./georgia-escape-code-examples/screenshots-web-project/tour-details-wine.png)
 
 ### About Page
-![About](screenshots-web-project/about.png)
+![About](./georgia-escape-code-examples/screenshots-web-project/about.png)
 
 ### Blog
-![Blog](screenshots-web-project/blog.png)
+![Blog](./georgia-escape-code-examples/screenshots-web-project/blog.png)
 
 ### Reservation Form
-![Reserve](screenshots-web-project/reserve.png)
+![Reserve](./georgia-escape-code-examples/screenshots-web-project/reserve.png)
 
 ### Contact
-![Contact](screenshots-web-project/contact.png)
+![Contact](./georgia-escape-code-examples/screenshots-web-project/contact.png)
 
 </details>
 
@@ -86,19 +87,27 @@
 ## 📂 โครงสร้างโปรเจกต์
 
 ```
-georgia-escape/
-├── images/                     # รูปภาพที่ใช้ในเว็บไซต์
-├── screenshots-web-project/    # Screenshot ทุกหน้า
-├── index.html                  # หน้าแรก
-├── packages.html               # หน้าแพ็กเกจทัวร์
-├── about.html                  # เกี่ยวกับเรา
-├── blog.html                   # บล็อก
-├── contact.html                # ติดต่อเรา
-├── reserve.html                # ฟอร์มจอง
-├── tour-details.html           # รายละเอียดทัวร์ Tbilisi
-├── tour-details-highland.html  # รายละเอียดทัวร์ Kazbegi
-├── tour-details-wine.html      # รายละเอียดทัวร์ Kakheti
-├── styles.css                  # Stylesheet หลัก
+georgia-escape-demo/
+├── georgia-escape-code-examples/
+│   ├── screenshots-web-project/    # Screenshot ทุกหน้า
+│   │   ├── about.png
+│   │   ├── blog.png
+│   │   ├── contact.png
+│   │   ├── index.png
+│   │   ├── packages.png
+│   │   ├── reserve.png
+│   │   ├── tour-details-highland.png
+│   │   ├── tour-details-tbilisi.png
+│   │   └── tour-details-wine.png
+│   ├── index.html                  # หน้าแรก
+│   ├── packages.html               # หน้าแพ็กเกจทัวร์
+│   ├── about.html                  # เกี่ยวกับเรา
+│   ├── blog.html                   # บล็อก
+│   ├── contact.html                # ติดต่อเรา
+│   ├── reserve.html                # ฟอร์มจอง
+│   ├── tour-details.html           # รายละเอียดทัวร์ Tbilisi
+│   ├── tour-details-highland.html  # รายละเอียดทัวร์ Kazbegi
+│   └── tour-details-wine.html      # รายละเอียดทัวร์ Kakheti
 ├── .gitignore
 ├── vercel.json
 └── README.md
@@ -143,13 +152,3 @@ georgia-escape/
 
 > "Georgia Escape เป็นจุดเริ่มต้นของการฝึกฝนการออกแบบเว็บไซต์  
 > ที่มุ่งเน้นความสวยงาม โครงสร้างเข้าใจง่าย และสามารถต่อยอดพัฒนาได้ในอนาคต"
-
----
-
-<div align="center">
-
-**⭐ ถ้าชอบโปรเจกต์นี้ กด Star ได้เลยครับ! ⭐**
-
-Made with ❤️ by [ctrlfaith](https://github.com/ctrlfaith)
-
-</div>
