@@ -87,17 +87,6 @@
 
 ```
 georgia-escape-demo/
-├── georgia-escape-code-examples/
-│   ├── screenshots-web-project/    # Screenshot ทุกหน้า
-│   │   ├── about.png
-│   │   ├── blog.png
-│   │   ├── contact.png
-│   │   ├── index.png
-│   │   ├── packages.png
-│   │   ├── reserve.png
-│   │   ├── tour-details-highland.png
-│   │   ├── tour-details-tbilisi.png
-│   │   └── tour-details-wine.png
 │   ├── index.html                  # หน้าแรก
 │   ├── packages.html               # หน้าแพ็กเกจทัวร์
 │   ├── about.html                  # เกี่ยวกับเรา
