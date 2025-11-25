@@ -7,8 +7,7 @@
 
 ## 🚀 Live Demo
 
-เข้าชมเว็บไซต์ที่ deploy แล้ว:  
-👉 **[georgia-escape-demo.vercel.app](https://georgia-escape-demo.vercel.app)**
+เข้าชมเว็บไซต์: 👉 **[georgia-escape-demo.vercel.app](https://georgia-escape-demo.vercel.app)**
 
 ---
 
