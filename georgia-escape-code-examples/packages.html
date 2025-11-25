@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Explore Georgia with Georgia Escape's tour packages. Discover Tbilisi, Kazbegi, Kakheti, and more with curated trips starting from $590. Book now!">
+  <title>Georgia Escape - Tour Packages</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <style>
+    .package-card {
+      transition: opacity 0.3s ease;
+    }
+    .package-card.hidden {
+      opacity: 0;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-white border-bottom shadow-sm py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4 text-dark" href="index.html">Georgia Escape</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="packages.html">Packages</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="reserve.html">Reserve</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="bg-white py-4 border-bottom">
+    <div class="container text-center">
+      <div class="d-flex justify-content-center flex-wrap gap-3" id="filterButtons">
+        <button type="button" class="btn btn-outline-dark rounded-pill px-4 py-2 active" data-filter="all" aria-label="Show all packages">All</button>
+        <button type="button" class="btn btn-outline-dark rounded-pill px-4 py-2" data-filter="mountains" aria-label="Show mountains packages">Mountains</button>
+        <button type="button" class="btn btn-outline-dark rounded-pill px-4 py-2" data-filter="culture" aria-label="Show culture packages">Culture</button>
+        <button type="button" class="btn btn-outline-dark rounded-pill px-4 py-2" data-filter="wine" aria-label="Show wine packages">Wine</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 text-center bg-light">
+    <div class="container">
+      <h1 class="fw-bold">Our Featured Packages</h1>
+      <p class="text-muted mb-2">Handpicked journeys across Georgia’s most beautiful landscapes</p>
+      <p class="text-muted">Curated by local experts, each package offers an authentic experience blending culture, comfort, and breathtaking scenery.</p>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4" id="packageCards">
+        <div class="col-md-4 package-card" data-category="culture">
+          <div class="card h-100 border-0 shadow-sm">
+            <div id="carouselPackage1" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner rounded-top">
+                <div class="carousel-item active">
+                  <img src="https://images.unsplash.com/photo-1584097774515-8657972fdd29?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Tbilisi old town">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://images.unsplash.com/photo-1641825216718-679d0947d6b0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Mtskheta cathedral">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://images.unsplash.com/photo-1722283036608-beb3d7181efc?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Tbilisi cityscape">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselPackage1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria'accessibility="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselPackage1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria'accessibility="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Tbilisi & Beyond</h5>
+              <p class="card-text text-muted">Explore Tbilisi and the sacred town of Mtskheta.</p>
+              <p class="fw-semibold mb-1">5 Days · From $650</p>
+              <ul class="text-muted small ps-3 mb-0">
+                <li>Daily guided tours in Tbilisi & Mtskheta</li>
+                <li>4-star accommodations with breakfast</li>
+                <li>Private airport transfers</li>
+              </ul>
+              <div class="d-flex gap-2 mt-3">
+                <a href="tour-details.html" class="btn btn-outline-dark w-50">Explore Tour</a>
+                <a href="reserve.html" class="btn btn-dark w-50">Reserve</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 package-card" data-category="mountains">
+          <div class="card h-100 border-0 shadow-sm">
+            <div id="carouselPackage2" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner rounded-top">
+                <div class="carousel-item active">
+                  <img src="https://andystravelblog.com/wp-content/uploads/2019/03/gergeti-full-zoom-1-2.jpg" class="d-block w-100" alt="Gergeti Trinity Church in Kazbegi">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://images.unsplash.com/photo-1569498283068-140e58143192?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Caucasus mountains in Kazbegi">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://cdn.bookatrekking.com/data/images/2019/10/packing-list-trekking-in-georgia.webp" class="d-block w-100" alt="Hiking trail in Gudauri">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselPackage2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria'accessibility="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselPackage2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria'accessibility="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Highland Adventure</h5>
+              <p class="card-text text-muted">A scenic journey through Kazbegi and Gudauri.</p>
+              <p class="fw-semibold mb-1">7 Days · From $880</p>
+              <ul class="text-muted small ps-3 mb-0">
+                <li>Scenic hikes in the Caucasus mountains</li>
+                <li>Stay in eco-lodges with full board</li>
+                <li>Transportation with local guide</li>
+              </ul>
+              <div class="d-flex gap-2 mt-3">
+                <a href="tour-details-highland.html" class="btn btn-outline-dark w-50">Explore Tour</a>
+                <a href="reserve.html" class="btn btn-dark w-50">Reserve</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 package-card" data-category="wine">
+          <div class="card h-100 border-0 shadow-sm">
+            <div id="carouselPackage3" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner rounded-top">
+                <div class="carousel-item active">
+                  <img src="https://images.unsplash.com/photo-1675026294659-0ee76bb66975?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Kakheti vineyards">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://images.unsplash.com/photo-1696081248333-ff9c53541321?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Wine tasting in Kakheti">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://images.unsplash.com/photo-1675026294521-44316d6c2d60?q=80&w=2106&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Kakheti countryside">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselPackage3" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria'accessibility="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselPackage3" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria'accessibility="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Wine & Wellness</h5>
+              <p class="card-text text-muted">Unwind in Kakheti with wine, spa, and nature.</p>
+              <p class="fw-semibold mb-1">4 Days · From $590</p>
+              <ul class="text-muted small ps-3 mb-0">
+                <li>Wine tastings in Kakheti vineyards</li>
+                <li>Relaxing spa treatments</li>
+                <li>Charming boutique hotel stays</li>
+              </ul>
+              <div class="d-flex gap-2 mt-3">
+                <a href="tour-details-wine.html" class="btn btn-outline-dark w-50">Explore Tour</a>
+                <a href="reserve.html" class="btn btn-dark w-50">Reserve</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 text-center bg-white">
+    <div class="container">
+      <h3 class="fw-semibold mb-3">Ready to Book Your Georgian Adventure?</h3>
+      <p class="text-muted mb-4">Get a personalized quote or contact us for exclusive offers!</p>
+      <form class="d-flex justify-content-center flex-column align-items-center gap-3">
+        <div class="d-flex flex-column flex-md-row gap-2 w-100" style="max-width: 500px;">
+          <input type="text" class="form-control" placeholder="Your Name" required>
+          <input type="email" class="form-control" placeholder="Your Email" required>
+        </div>
+        <button type="submit" class="btn btn-dark btn-lg rounded-pill px-4">Get a Quote</button>
+      </form>
+    </div>
+  </section>
+
+   <section class="py-5 text-center bg-light">
+    <div class="container-lg">
+      <h3 class="fw-semibold mb-4">What Travelers Say</h3>
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-4">
+          <div class="p-4 border rounded shadow-sm text-start bg-white">
+            <p class="text-muted fst-italic">“The Tbilisi tour was unforgettable. The guides were so knowledgeable!”</p>
+            <div class="d-flex align-items-center mt-4">
+              <img src="https://randomuser.me/api/portraits/women/72.jpg" alt="Lara from Italy" class="rounded-circle me-3" width="50" height="50">
+              <p class="fw-semibold mb-0">Lara, Italy</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="p-4 border rounded shadow-sm text-start bg-white">
+            <p class="text-muted fst-italic">“Kazbegi’s mountains took my breath away. Highly recommend!”</p>
+            <div class="d-flex align-items-center mt-4">
+              <img src="https://randomuser.me/api/portraits/men/19.jpg" alt="Hiroshi from Japan" class="rounded-circle me-3" width="50" height="50">
+              <p class="fw-semibold mb-0">Hiroshi, Japan</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="p-4 border rounded shadow-sm text-start bg-white">
+            <p class="text-muted fst-italic">“Kakheti’s wine and spa package was pure bliss.”</p>
+            <div class="d-flex align-items-center mt-4">
+              <img src="https://randomuser.me/api/portraits/women/38.jpg" alt="Aisha from United Arab Emirates" class="rounded-circle me-3" width="50" height="50">
+              <p class="fw-semibold mb-0">Aisha, United Arab Emirates</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-light border-top">
+    <div class="container text-center">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <i class="bi bi-shield-check fs-3 text-dark"></i>
+          <h6 class="fw-semibold mt-3 mb-1">Trusted Local Experts</h6>
+          <p class="text-muted small mb-0">All our trips are designed and led by locals who know Georgia inside out.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="bi bi-heart fs-3 text-dark"></i>
+          <h6 class="fw-semibold mt-3 mb-1">Curated Premium Trips</h6>
+          <p class="text-muted small mb-0">We handpick every stay, experience, and route — no tourist traps.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="bi bi-headset fs-3 text-dark"></i>
+          <h6 class="fw-semibold mt-3 mb-1">Support Anytime</h6>
+          <p class="text-muted small mb-0">We’re with you from planning to arrival. And if you need us — we’re one call away.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-white">
+    <div class="container">
+      <h3 class="text-center fw-semibold mb-5">Frequently Asked Questions</h3>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+              What’s included in the tour packages?
+            </button>
+          </h2>
+          <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Our packages typically include accommodation, guided tours, some meals, and transportation. Check the package details for specifics.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+              Can I customize a tour package?
+            </button>
+          </h2>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Yes, we offer customizable options. Contact us to tailor your itinerary to your preferences.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+              What is the cancellation policy?
+            </button>
+          </h2>
+          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Cancellations made 30 days prior to departure are fully refundable. See our <a href="terms.html">Terms of Use</a> for details.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center py-4 mt-5 bg-light text-muted small">
+    <div class="container">
+      <div class="mb-3">
+        <a href="https://facebook.com" class="text-muted me-3"><i class="bi bi-facebook"></i></a>
+        <a href="https://instagram.com" class="text-muted me-3"><i class="bi bi-instagram"></i></a>
+        <a href="https://twitter.com" class="text-muted"><i class="bi bi-twitter"></i></a>
+      </div>
+      <div class="mb-3">
+        <a href="privacy.html" class="text-muted me-3">Privacy Policy</a>
+        <a href="terms.html" class="text-muted">Terms of Use</a>
+      </div>
+      <div>Contact: <a href="mailto:info@georgiaescape.com" class="text-muted">info@georgiaescape.com</a> | +995 123 456 789</div>
+      <div class="mt-3">© 2025 Georgia Escape. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterButtons = document.querySelectorAll('#filterButtons .btn');
+      const packageCards = document.querySelectorAll('.package-card');
+
+      filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          button.classList.add('active');
+
+          const filter = button.getAttribute('data-filter');
+
+          packageCards.forEach(card => {
+            if (filter === 'all' || card.getAttribute('data-category') === filter) {
+              card.classList.remove('hidden');
+              setTimeout(() => { card.style.display = 'block'; }, 10);
+            } else {
+              card.classList.add('hidden');
+              setTimeout(() => { card.style.display = 'none'; }, 300);
+            }
+          });
+        });
+      });
+    });
+  </script>
+<script>(function(){
+  function c(){
+    var b = a.contentDocument || a.contentWindow.document;
+    if(b){
+      var d = b.createElement('script');
+      d.innerHTML = "window.__CF$cv$params={r:'939861c6f8758bbb',t:'MTc0NjE5Nzk2MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+      b.getElementsByTagName('head')[0].appendChild(d);
+    }
+  }
+  if(document.body){
+    var a = document.createElement('iframe');
+    a.height = 1;
+    a.width = 1;
+    a.style.position = 'absolute';
+    a.style.top = 0;
+    a.style.left = 0;
+    a.style.border = 'none';
+    a.style.visibility = 'hidden';
+    document.body.appendChild(a);
+    if('loading' !== document.readyState) c();
+    else if(window.addEventListener) document.addEventListener('DOMContentLoaded', c);
+    else {
+      var e = document.onreadystatechange || function(){};
+      document.onreadystatechange = function(b){
+        e(b);
+        if('loading' !== document.readyState){
+          document.onreadystatechange = e;
+          c();
+        }
+      }
+    }
+  }
+})();
+</script>
+</body>
+</html>
