@@ -3,8 +3,10 @@
 > 💡 **Frontend Practice Project**  
 > เว็บไซต์แพลตฟอร์มจองทัวร์ประเทศจอร์เจีย (Georgia) ที่พัฒนาด้วย HTML, CSS, JavaScript และ Bootstrap
 
-[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Visit_Site-blue?style=for-the-badge)](https://georgia-escape-demo.vercel.app)
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](https://github.com/ctrlfaith/georgia-escape-demo)
+## 🚀 Live Demo
+
+เข้าชมเว็บไซต์ที่:  👉 **[georgia-escape-demo.vercel.app](https://georgia-escape-demo.vercel.app)**
+
 
 ---
 
